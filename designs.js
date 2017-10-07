@@ -15,15 +15,15 @@ $(document).ready(function(){
     //loop for creating required no of rows
     for(curRow=0;curRow<row;curRow++){
       //row is intialized
-        var R=$("<tr>");
+        var newRow=$("<tr>");
       //loop for creating required no of columns
         for(curCol=0;curCol<col;curCol++){
             //creating no of columns required
-            var C=R.append($("<td>"));
+            var newCol=newRow.append($("<td>"));
         }
         //inner loop ends
         //appending the created cells to the table
-        $("#pixel_canvas").append(R);
+        $("#pixel_canvas").append(newRow);
     }
     //outer loop ends
 });
